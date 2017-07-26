@@ -15,7 +15,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         curl \
     && mkdir /tmp/phantomjs \
-    && curl -L https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2 \
+    && curl -L https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.5.0-beta-linux-ubuntu-trusty-x86_64.tar.gz \
            | tar -xj --strip-components=1 -C /tmp/phantomjs \
     && cd /tmp/phantomjs \
     && mv bin/phantomjs /usr/local/bin \
